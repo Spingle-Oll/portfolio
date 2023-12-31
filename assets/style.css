@@ -15,6 +15,7 @@ a{
 p{
     font-family: 'Roboto Flex', sans-serif;
 } 
+/*main page*/
 header{
     text-align: center;
     padding: 1.5% 1%;
@@ -37,6 +38,17 @@ header{
 .certificat{
     margin: 2% 0 0 0;
 }
+#maintext{
+    text-align:center;
+    margin-top: -15px;
+    font-family: 'Open Sans', sans-serif;
+}
+#mainimg{
+    display: block;
+    margin: 2px auto;
+    border-radius: 40%;
+}
+/*article page*/
 .content-of-article{
     background-color: #f5d8b0;
     border-radius: 5px 5px 0 0;
@@ -48,13 +60,92 @@ header{
     text-align: justify;
     font-size: 20px;
 }
-#maintext{
-    text-align:center;
-    margin-top: -15px;
-    font-family: 'Open Sans', sans-serif;
+
+/*about page*/
+.book-table{
+    width: 100%;
+    border: solid 2px white;
 }
-#mainimg{
-    display: block;
-    margin: 2px auto;
-    border-radius: 40%;
+.td-element{
+    text-align: center;
+    border-bottom: solid #04364A 50px;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+.th-element{
+    border: solid 2px white;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.book-image{
+    float: left;
+    border-radius: 4%;
+    margin: 2%;
+}
+.img-in-td{
+    width: 150px;
+}
+.quotes{
+    text-align: left;
+    font-size: 1.5rem;
+    color: white;
+    padding: 2%;
+    font-style: italic;
+}
+.film-image{
+    border: 5px black solid;
+    float: left;
+    width: 200px;
+    margin-right: 1%;
+}
+.film-part p {
+    text-align: justify;
+}
+.film-section{
+    display: inline-block;
+    width: 100%;
+}
+.text-of-film{
+    margin: 1%;
+}
+#span-quotes{
+    color: white;
+    font-size: 20px;
+}
+@media (min-width:319px) and (max-width: 1200px){
+    .book-image{
+        width: 600px;
+        float: none;
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+    .quotes{
+        clear:left;
+        text-align: center;
+    }
+    #span-quotes{
+        clear: left;
+    }
+    .img-in-td{
+        width: 100px;
+    }
+    .film-image{
+        width: 100px;
+        margin: 0 auto;
+        float: none;
+        display: block;
+        margin-right: none;
+    }
+    .th-element{
+        font-size: 1rem;
+    }
+    .td-element{
+        font-size: 1rem;
+    }
+
 }
