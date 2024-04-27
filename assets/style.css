@@ -118,7 +118,7 @@ header{
 }
 @media (min-width:319px) and (max-width: 1200px){
     .book-image{
-        width: 600px;
+        width: 100%;
         float: none;
         display: block;
         float: none;
