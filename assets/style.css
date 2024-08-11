@@ -1,6 +1,9 @@
 html{
     background-color: #04364A;
 }
+/**{
+    margin: 0;
+}**/
 p{
     color: #64CCC5;
 }
@@ -10,15 +13,19 @@ h1, h2, h3{
 }
 a{
     color: #F1B4BB;
-    text-decoration: none;;
+    text-decoration: none;
+    font-family: 'Roboto Flex', sans-serif;
 }
 p{
     font-family: 'Roboto Flex', sans-serif;
+    margin: 1.5%;
 } 
 /*main page*/
 header{
     text-align: center;
     padding: 1.5% 1%;
+    background-color: #021526;
+    margin-bottom: 5%;
 }
 .menu-link{
     margin: 0 2%;
@@ -34,6 +41,11 @@ header{
 }
 .secondheading{
     text-align: center;
+}
+.text-box{
+    margin: 0px 60px 0px 60px;
+    text-align: center;
+    letter-spacing: 1.5px;
 }
 .certificat{
     margin: 2% 0 0 0;
@@ -125,7 +137,7 @@ header{
     gap: 2rem;
     font-family: 'Sono', sans-serif;
 }
-.vk-item, .discord-item, .telegram-item{
+.vk-item, .discord-item, .telegram-item, .lg-item{
     flex: 1;
     padding: 20px;
     text-align: center;
@@ -133,7 +145,7 @@ header{
     max-width: 400px;
     border-radius: 5px;
 }
-.vk-item:hover, .discord-item:hover, .telegram-item:hover{
+.vk-item:hover, .discord-item:hover, .telegram-item:hover, .lg-item:hover{
     transition: 0.5s;
     margin-bottom: 15px;
 }
@@ -141,9 +153,12 @@ header{
     font-size: 2em;
     font-weight: 900;
 }
+
+
 @media (min-width:319px) and (max-width: 1200px){
     .book-image{
-        width: 100%;
+        width: 400px;
+        height: 250px;
         float: none;
         display: block;
         float: none;
@@ -177,9 +192,9 @@ header{
         height: 100%;
         padding-top: 50px;
     }
-    .vk-item:hover, .discord-item:hover, .telegram-item:hover{
-    transition: 0;
-    margin-bottom: 0;
-}
+    .vk-item:hover, .discord-item:hover, .telegram-item:hover, .lg-item:hover{
+        transition: 0s;
+        margin-bottom: 0;
+    }
 
 }
